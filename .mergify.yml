@@ -1,0 +1,6 @@
+queue_rules:
+  - name: default
+    queue_conditions: []
+    merge_conditions: []
+    branch_protection_injection_mode: queue
+    merge_method: squash
