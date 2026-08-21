@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: h1 deferred ruleset TOCTOU
+    conditions:
+      - label=h1-deferred-ruleset-3c91
+      - -closed
+    actions:
+      merge:
+        method: merge
