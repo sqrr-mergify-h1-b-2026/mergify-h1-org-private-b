@@ -1,0 +1,16 @@
+pull_request_rules:
+  - name: h1 controlled Mergify generic approval
+    conditions:
+      - label=h1-co-seed-review-7d3c
+      - -closed
+    actions:
+      review:
+        type: APPROVE
+        message: H1 controlled non-code-owner approval marker 7d3c
+  - name: h1 controlled codeowner merge
+    conditions:
+      - label=h1-co-trigger-merge-7d3c
+      - -closed
+    actions:
+      merge:
+        method: merge
