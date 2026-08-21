@@ -4,3 +4,9 @@ queue_rules:
     merge_conditions: []
     branch_protection_injection_mode: queue
     merge_method: squash
+pull_request_rules:
+  - name: controlled autoqueue ruleset validation
+    conditions:
+      - title = H1 controlled ruleset exemption test
+    actions:
+      queue:
