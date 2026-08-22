@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: controlled required-signatures policy probe r7e2
-    conditions:
-      - label=h1-required-signatures-r7e2
-      - -closed
-    actions:
-      merge:
-        method: rebase
